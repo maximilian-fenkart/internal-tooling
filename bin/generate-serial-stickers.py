@@ -28,10 +28,10 @@ SERIAL_MAX = 99_999
 GENERATE_TYPES = HARDWARE_TYPES
 GENERATE_START = 1
 GENERATE_END = 99_999
-GENERATE_END = 48
+GENERATE_END = 10_000
 
 # Split large batches so each PDF stays printable.
-MAX_PAGES_PER_PDF = 50
+MAX_PAGES_PER_PDF = 25
 
 # --- Sticker geometry (centimetres) ----------------------------------------
 STICKER_WIDTH_CM = 4.5
