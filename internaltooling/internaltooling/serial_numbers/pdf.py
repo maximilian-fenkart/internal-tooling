@@ -206,7 +206,7 @@ def _draw_logo(c: canvas.Canvas, logo, x_mm: float, y_mm: float, width_mm: float
 
 def _serial_font_size(serial: str, max_width_mm: float) -> float:
     max_width_pt = max_width_mm * mm
-    size = 7.0
+    size = config.SERIAL_FONT_MAX_PT
     while size > 4.0 and stringWidth(serial, _SERIAL_FONT, size) > max_width_pt:
         size -= 0.25
     return size
